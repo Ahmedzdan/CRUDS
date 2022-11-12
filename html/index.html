@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/indexStyle.css">
+    </head>
+    <body>
+
+        <div class="dataForm">
+            <div class="form-container">
+                <div class="form-group mt-3">
+                    <label>إسم المنتج</label>
+                    <input type="text" class="form-control mt-2" id="productNameInput">
+                    <div id="productNameAlert" class="alert alert-danger d-none mt-2">عدد حروف اسم المنتج لايقل عن 4 حروف ولايزيد عن 7 حروف يبدأ بحرف كابتل</div>
+                </div>
+                <div class="form-group mt-3">
+                    <label> النوع</label>
+                    <input type="text" class="form-control mt-2" id="productTypeInput">
+                </div>
+                <div class="form-group mt-3">
+                    <label> السعر</label>
+                    <input type="text" class="form-control mt-2" id="productPriceInput">
+                </div>
+                <div class="form-group mt-3">
+                    <label> الكمية</label>
+                    <input type="text" class="form-control mt-2" id="productQuantityInput">
+                </div>
+                <button type="submit" class="btn btn-info py-2 px-3 mt-2" onclick="addProduct()">إضافة منتج</button>
+            </div>
+        </div>
+
+        <div class="search mx-auto ">
+
+            <i class="fa-solid fa-magnifying-glass text-info"></i>
+            <input type="text" id="searchInput" placeholder="أكتب اسم المنتج" onkeyup="searchProduct()">
+        </div>
+
+        <table class="table w-75 mx-auto ">
+            <thead>
+                <th>م</th>
+                <th>إسم المنتج</th>
+                <th>النوع</th>
+                <th>السعر</th>
+                <th>الكمية</th>
+            </thead>
+            <tbody id="tableData">
+            
+            </tbody>
+        </table>
+        
+        
+
+
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+html{
+    direction: rtl;
+}
+
+body{
+    
+}
+
+.dataForm{
+   
+    background-color: #091438;
+    border: 1px solid #ccc; 
+    color: white;
+}
+
+.form-container{
+    width: 80%;
+    margin:20px auto 50px;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.search{
+    width: 60%;
+    background-color: white;
+    border: solid 1px #777;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    top: -45px;
+    display: flex;
+    align-items: center;
+}
+
+.search i{
+    font-size: 20px;
+}
+
+.search input{
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 10px 5px 0px;
+    margin-right: 5px;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+
+.search input::placeholder{
+
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
